@@ -14,3 +14,5 @@ Use a date form in your HTML document and write JavaScript code that will listen
 
 
 Result: 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
