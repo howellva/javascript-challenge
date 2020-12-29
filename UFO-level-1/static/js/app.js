@@ -66,44 +66,51 @@ data.forEach(function(alienReport) {
 //Use a date form in your HTML document and write JavaScript code that 
 //will listen for events and search through the date/time column to find rows that match user input.
 
+// Select the button
+var button = d3.select("#filter-btn");  
+
+
+// Create event handlers 
+button.on("click", runEnter);
+
+
+function runEnter() {
+
+    // Prevent the page from refreshing
+    d3.event.preventDefault();
+    
+    // Select the input element and get the raw HTML node
+    var inputElement = d3.select("#datetime");
+  
+    // Get the value property of the input element
+    var inputValue = inputElement.property("value");
+
+   
+    var filteredData = tableData.filter(person => person.datetime === inputValue);
+
+    console.log(filteredData);
+
+
+    tbody.html("");
+
+    filteredData.forEach(function(searched) {
+        console.log(searched);
+        var row = tbody.append("tr");
+        Object.entries(searched).forEach(function([key, value]) {
+          console.log(key, value);
+          // Append a cell to the row for each value
+          // in the weather report object
+          var cell = row.append("td");
+          cell.text(value);
+        });
+      });
+
+}  
 
 
 
 
 
-
-// // Select the button
-// var button = d3.select("#filter-btn");
-// button.on("click", function() {
-
-//     tbody.html("");
-
-//     // Select the input date get the raw HTML nodes
-//     var inputElement = d3.select("#datetime");
-//     // Get the value property of the input date, state, shape
-//     var inputValue = inputElement.property("value");
-//     // console.log input value
-//     console.log(inputValue);
-//     // Filter Data with datetime equal to input value
-//     var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
-//     // console.log filter values
-//     console.log(filteredData);
-
-
-//     filteredData.forEach(function(selections) {
-
-//     console.log(selections);
-//     // Append one table row `tr` for each UFO Sighting object
-//     var row = tbody.append("tr");
-//     // Use `Object.entries` to console.log each UFO Sighting value
-//     Object.entries(selections).forEach(function([key, value]) {
-//         console.log(key, value);
-//         // Append a cell to the row for each value
-//         var cell = row.append("td");
-//         cell.text(value);
-//     });
-// });
-// });
 
 
 
