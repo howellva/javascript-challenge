@@ -63,28 +63,13 @@ data.forEach(function(alienReport) {
   });
 });
 
+//Use a date form in your HTML document and write JavaScript code that 
+//will listen for events and search through the date/time column to find rows that match user input.
 
 
 
 
 
-// Get a reference to the table body
-// var tbody = d3.select("tbody");
-
-// // UFO Sighting values for each column
-// tableData.forEach(function(ufoSighting) {
-//     console.log(ufoSighting);
-//     // Append one table row `tr` for each UFO Sighting object
-//     var row = tbody.append("tr");
-
-//     // Use `Object.entries` to console.log each UFO Sighting value
-//     Object.entries(ufoSighting).forEach(function([key, value]) {
-//       console.log(key, value);
-//       // Append a cell to the row for each value
-//       var cell = row.append("td");
-//       cell.text(value);
-//     });
-//   });
 
 
 // // Select the button
@@ -120,62 +105,10 @@ data.forEach(function(alienReport) {
 // });
 // });
 
-// // Creating References
-// var $tbody = d3.select("tbody");
-// var button = d3.select("#filter-btn");
-// var inputFieldDate = d3.select("#datetime");
-// var inputFieldCity = d3.select("#city");
-// var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 
 
 
 
-// // Inputing the data into the HTML
-// var addData = (dataInput) => {
-//     dataInput.forEach(ufoSightings => {
-//         var row = $tbody.append("tr");
-//         columns.forEach(column => row.append("td").text(ufoSightings[column])
-//         )
-//     });
-// }
-
-// addData(tableData);
 
 
-// // Creating an Event Listener for the Button
-// // Setting up the Filter Button for Date and City
-// button.on("click", () => {
 
-//     d3.event.preventDefault();
-    
-
-//     var inputDate = inputFieldDate.property("value").trim();
-//     // console.log(inputDate)
-//     // https://www.w3schools.com/jsref/jsref_tolowercase.asp
-//     // var inputCity = inputFieldCity.property("value").toLowerCase().trim();
-//     // console.log(inputCity)
-//     // var inputState = inputFieldState.property("value").toLowerCase().trim();
-//     // var inputCountry = inputFieldCountry.property("value").toLowerCase().trim();
-//     // var inputShape = inputFieldShape.property("value").toLowerCase().trim();
-    
-
-//     var filterDate = tableData.filter(tableData => tableData.datetime === inputDate);
-    
-
-//     $tbody.html("");
-
-//     let response = {
-//         filterDate
-//     }
-
-
-//     if(response.filterDate.length !== 0) {
-//         addData(filterDate);
-//     }
-
-//     // Top if only works for filtering the date
-    
-//         else {
-//             $tbody.append("tr").append("td").text("No Sightings Here...Move On...");
-//         }
-// })
