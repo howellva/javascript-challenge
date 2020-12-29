@@ -14,5 +14,6 @@ Use a date form in your HTML document and write JavaScript code that will listen
 
 
 Result: 
-![Image of Yaktocat](https://github.com/howellva/javascript-challenge/blob/main/Filter%20Search.PNG)
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Main](https://github.com/howellva/javascript-challenge/blob/main/main.PNG)
+![Filter](https://github.com/howellva/javascript-challenge/blob/main/Filter%20Search.PNG)
+
